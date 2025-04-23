@@ -14,7 +14,9 @@ import java.time.LocalDate;
 public class Jugador {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idJugador;
+    private long idJugador;
+
+
     private String nombre;
     private String posicion;
     private int dorsal;

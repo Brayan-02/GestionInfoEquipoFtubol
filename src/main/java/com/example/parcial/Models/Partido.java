@@ -16,7 +16,7 @@ import java.time.LocalDate;
 public class Partido {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idPartido;
+    private long idPartido;
 
     private LocalDate fecha;
     private String estadio;

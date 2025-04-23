@@ -13,7 +13,7 @@ public class Entrenador {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idEntrenador;
+    private long idEntrenador;
 
     private String nombre;
     private String especialidad;
@@ -21,4 +21,5 @@ public class Entrenador {
     @ManyToOne
     @JoinColumn(name = "idEquipo")
     private Equipo equipo;
+
 }

@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class EstadisticasJugador {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idEstadistica;
+    private long idEstadistica;
 
     @ManyToOne
     @JoinColumn(name = "idJugador")
