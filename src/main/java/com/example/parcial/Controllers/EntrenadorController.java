@@ -47,7 +47,7 @@ public class EntrenadorController {
         return new ResponseEntity<>(nuevoEntrenador, HttpStatus.CREATED);
     }
 
-    // Actualizar un entrenador existente
+    // Actualizar un entrenador exi
     @PutMapping("/{id}")
     public ResponseEntity<Entrenador> actualizarEntrenador(@PathVariable Long id, @RequestBody Entrenador entrenador) {
         Entrenador entrenadorActualizado = entrenadorService.actualizarEntrenador(id, entrenador);
